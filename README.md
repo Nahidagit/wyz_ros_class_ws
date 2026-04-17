@@ -21,7 +21,7 @@ source devel/setup.bash
 
 ---
 
-实验一：里程计移动
+第一周：里程计移动
 
 终端1： 启动机器人驱动
 
@@ -39,7 +39,7 @@ rosrun my_class_pkg odom_move
 
 ---
 
-实验二：传感器避障
+第二周：传感器避障
 
 终端1： 启动机器人驱动
 
@@ -65,7 +65,7 @@ rosrun my_class_pkg rotate_180
 
 ---
 
-实验三：动态参数调节
+第三周：动态参数调节
 
 终端1： 启动机器人驱动
 
@@ -91,7 +91,7 @@ rosrun rqt_reconfigure rqt_reconfigure
 
 ---
 
-实验四：仿真与建模
+第四周：仿真与建模
 
 4.1 RViz模型显示
 
@@ -124,7 +124,7 @@ rosrun upros_move_linear teleop_twist_keyboard.py
 
 ---
 
-实验五：视觉与抓取
+第五周：视觉与抓取
 
 5.1 巡线实验
 
