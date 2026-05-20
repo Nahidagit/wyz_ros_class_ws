@@ -205,6 +205,36 @@ rosrun my_class_pkg tag_grab_node
 
 ---
 
+第六周：建图导航实验
+
+终端1： 启动机器人驱动
+
+```bash
+roslaunch upros_bringup bringup_w2a.launch
+```
+
+终端2： 启动定位导航节点
+
+```bash
+roslaunch upros_navigation navigation.launch
+```
+
+终端3： 启动观测节点
+
+```bash
+roslaunch upros_navigation view_nav.launch
+```
+
+终端4： 启动导航点发送节点
+
+```bash
+rosrun my_class_pkg movebase_client_node
+```
+
+---
+
+
+
 常见问题
 
 编译报错找不到包
@@ -260,5 +290,3 @@ bcsh
 TODO
 
 ```
-
-直接全选复制，保存为 `~/wyz_ros_class_ws/README.md` 即可。
