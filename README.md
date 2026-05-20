@@ -260,3 +260,5 @@ bcsh
 TODO
 
 ```
+
+直接全选复制，保存为 `~/wyz_ros_class_ws/README.md` 即可。
