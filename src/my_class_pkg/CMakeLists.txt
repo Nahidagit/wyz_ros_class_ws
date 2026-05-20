@@ -16,6 +16,8 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   tf2_ros
   upros_message
+  move_base_msgs
+  
 )
 
 ## System dependencies are found with CMake's conventions
@@ -32,6 +34,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
 	DIRECTORY msg
 	FILES MyMessage.msg
+	FILES WindowStatus.msg
 )
 
 add_service_files(
@@ -203,3 +206,8 @@ target_link_libraries(ros_dynamic_speed_node ${catkin_LIBRARIES} ${my_class_pkg_
 #fifth homework
 add_executable(tag_grab_node src/tag_grab.cpp)
 target_link_libraries(tag_grab_node ${catkin_LIBRARIES})
+
+#sixth homework
+add_executable(movebase_client_node src/movebase_client.cpp)
+target_link_libraries(movebase_client_node ${catkin_LIBRARIES})
+

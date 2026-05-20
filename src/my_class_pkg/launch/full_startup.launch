@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <!-- 1. 启动机器人基础驱动 -->
+    <include file="$(find upros_bringup)/launch/bringup_w2a.launch"/>
+    
+    <!-- 2. 启动 move_base 导航 -->
+    <include file="$(find upros_navigation)/launch/navigation.launch"/>
+    
+    <!-- 3. 启动 Rviz 导航可视化 -->
+    <include file="$(find upros_navigation)/launch/view_nav.launch"/>
+    
+    <!-- 4. 启动语音播报服务 -->
+    <include file="$(find upros_chat)/launch/word_to_speech.launch"/>
+    
+    <!-- 5. 启动 AprilTag 语音识别节点（独立终端） -->
+    <node pkg="my_class_pkg" type="vispeak.py" name="apriltag_voice_node" output="screen" launch-prefix="gnome-terminal --"/>
+    
+    <!-- 6. 启动多点导航节点（独立终端，延迟 0 秒） -->
+
+    
+</launch>
