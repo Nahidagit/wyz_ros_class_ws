@@ -1,4 +1,4 @@
-好的，这是可以直接复制粘贴的完整 README.md 文件内容：
+这是可以直接复制粘贴的完整 README.md 文件内容：
 
 ```markdown
 # wyz_ros_class_ws
