@@ -233,7 +233,21 @@ rosrun my_class_pkg movebase_client_node
 
 ---
 
+第七周：语音交互与大模型实验
 
+终端1：启动语音识别节点
+
+```bash
+roslaunch upros_chat speech_to_word.launch
+```
+
+终端2：启动大模型回答节点
+
+```bash
+rosrun my_class_pkg llm_chat.py
+```
+
+---
 
 常见问题
 
